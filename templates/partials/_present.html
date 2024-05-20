@@ -1,0 +1,37 @@
+{% load static %}
+
+<!-- About Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">Get to Know Us</h5>
+        </div>
+        <div class="row g-5 justify-content-center">
+            <div class="col-lg-8" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <div class="video-container">
+                        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/18rzT4JbgO0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+<style>
+    .video-container {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 aspect ratio */
+        overflow: hidden;
+    }
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+</style>

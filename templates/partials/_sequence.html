@@ -1,0 +1,36 @@
+{% load static %}
+
+<!-- About Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="background-color:#eef9ff">
+    <div class="container py-5">
+        <div class="row g-5 mb-5">
+            <h5 class="text-center">SinamFor is your partner in achieving success, whether you're a student tackling academic challenges
+                or an entrepreneur aiming to bring your vision to life. Our team of experienced mentors and coaches
+                understands the hurdles you face and is dedicated to helping you overcome them. We offer personalized
+                guidance tailored to your unique needs, empowering you to master your goals and reach your full potential.
+                With SinamFor, you gain a passionate advocate committed to your success every step of the way.</h5>
+        </div>
+        <div class="row g-3 justify-content-center wow fadeIn" data-wow-delay="0.6s">
+            <div class="col-lg-6 col-md-8 d-flex align-items-center mb-4">
+                <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                    <i class="fa fa-phone-alt text-white"></i>
+                </div>
+                <div class="ps-4">
+                    <h5 class="mb-2">Call to ask any question</h5>
+                    <div class="d-flex align-items-center">
+                        <img src="{% static 'img/flags/togo_flag.png' %}" alt="Togo Flag" style="height: 20px;">
+                        <h6 class="text-primary mb-0 ps-2">Togo: +228 90 43 52 54</h6>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img src="{% static 'img/flags/japan_flag.jpg' %}" alt="Japan Flag" style="height: 20px;">
+                        <h6 class="text-primary mb-0 ps-2">Japan: +81- 8492-4509</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 d-flex align-items-center justify-content-center mb-4">
+                <a href="{% url 'services' %}" class="btn btn-primary py-3 px-5 my-2 wow zoomIn" data-wow-delay="0.9s">Request A Quote</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->

@@ -1,0 +1,55 @@
+{% load static %}
+
+<!-- Testimonial Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">Testimonial</h5>
+            <h1 class="mb-0">What Our Clients Say About Our Digital Services</h1>
+        </div>
+        <div class="testimonial-item bg-light mx-auto">
+            <div class="d-flex align-items-center justify-content-center border-bottom pt-5 pb-4">
+                <h4 class="text-primary mb-1" id="testimonial-name">Samson</h4>
+            </div>
+            <div class="p-5 text-center">
+                <p id="testimonial-text">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+<script>
+    var testimonials = [
+        {
+            name: "Samson",
+            text: "My initial online interview with the SinamFor expert was immensely rewarding. It provided me with clearly outlined objectives and expanded my understanding of study abroad opportunities. The team's responsiveness and efficiency in addressing my inquiries instilled in me the confidence to embark on this new chapter of studying abroad. Currently, I am implementing the ideas that emerged from our discussions with the ultimate goal of securing fully funded scholarships. I extend my sincere thanks to the SinamFor team for their willingness to accompany me on this journey until its completion."
+        },
+        {
+            name: "Jean Richard",
+            text: "I would like to express my gratitude for this valuable experience. For several years, I have been interested in pursuing studies abroad, but I have been distracted by various activities and discouraged by minor setbacks. During the initial interview, I met a highly professional and dynamic team who gave me hope and motivation to exceed my expectations. I was particularly impressed by the advice and guidance offered by the coach regarding the opportunities, language skills, and preparation required. I have also recommended the service to others and have received positive feedback from them. I would like to extend my congratulations to you on your coaching. I would also like to thank you again for your excellent service."
+        },
+        {
+            name: "Raymond",
+            text: "I was greatly impressed by the guidance provided throughout the process of finding study abroad opportunities. The advice from the coach/consultant made it easy for me to discover full scholarships that I have already applied for. Every week, I receive an average of two scholarships that I apply for. At this rate, I am confident that I will obtain a scholarship in short order. I appreciate your support and encouragement, as it provides me with a very enriching experience and gives me the impetus to pursue my academic goals abroad. I highly recommend SinamFor's services to anyone considering such a step. See you soon to share the good news of my success."
+        }
+    ];
+
+    var currentIndex = 0;
+
+    function displayTestimonial() {
+        document.getElementById("testimonial-name").innerText = testimonials[currentIndex].name;
+        document.getElementById("testimonial-text").innerText = testimonials[currentIndex].text;
+
+        currentIndex++;
+        if (currentIndex >= testimonials.length) {
+            currentIndex = 0;
+        }
+    }
+
+    // Afficher le premier témoignage au chargement de la page
+    displayTestimonial();
+
+    // Changer le témoignage toutes les 5 secondes
+    setInterval(displayTestimonial, 7000);
+</script>
