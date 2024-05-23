@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 éasgiref==3.8.1
+=======
+asgiref==3.8.1
+>>>>>>> f1016df (update all)
 attrs==22.2.0
 build==0.10.0
 CacheControl==0.12.11
