@@ -3,7 +3,8 @@
 <!-- Service Start -->
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
     <div class="container py-5">
-        <div class="custom-section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+        <!-- Service Start -->
+        <div class="custom-section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px; left: 0; right: 0; margin: 0 auto;">
             <h5 class="fw-bold text-primary text-uppercase">Our Services</h5>
             <h1 class="mb-0 mb-3">Empowering Your Business with Tailored Solutions</h1>
         </div>
@@ -82,5 +83,20 @@
         border: 2px; /* Couleur et largeur de la bordure */
         border-radius: 75px;
         padding: 15px; /* Ajoute du padding interne */
+    }
+
+    .custom-section-title::after {
+        content: "";
+        position: absolute;
+        bottom: -15px; /* Adjusted the position to be below the title */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 5px;
+        background: var(--primary);
+        border-radius: 2px;
+    }
+    .pipe-margin {
+        margin: 0 5px; /* Adjust the margin as needed */
     }
 </style>
