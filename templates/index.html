@@ -30,6 +30,25 @@
 
     <!-- Template Stylesheet -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+     <style>
+        .custom-section-title {
+            position: relative;
+            padding-bottom: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .custom-section-title::after {
+            position: absolute;
+            content: "";
+            width: 150px;
+            height: 5px;
+            left: 0;
+            bottom: 0;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+    </style>
 </head>
 
 <body>

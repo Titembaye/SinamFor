@@ -277,7 +277,7 @@ h6,
     width: 6px;
     height: 5px;
     bottom: 0px;
-    background: #FFFFFF;
+    background: var(--primary);
     -webkit-animation: section-title-run 5s infinite linear;
     animation: section-title-run 5s infinite linear;
 }
