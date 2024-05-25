@@ -72,3 +72,18 @@
         </div>
     </div>
 </div>
+
+  .custom-section-title::after {
+        content: "";
+        position: absolute;
+        bottom: -15px; /* Adjusted the position to be below the title */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 5px;
+        background: var(--primary);
+        border-radius: 2px;
+    }
+    .pipe-margin {
+        margin: 0 5px; /* Adjust the margin as needed */
+    }
