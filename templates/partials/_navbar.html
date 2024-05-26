@@ -6,7 +6,7 @@
         <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
             <div class="d-inline-flex align-items-center" style="height: 45px;">
                 <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Lomé, Agbalepedo, zone GTA</small>
-                <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+228 90 43 52 54 /+81- 8492-4509</small>
+                <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+228 90 43 52 54 /+81-80-8492-4509</small>
                 <small class="text-light"><i class="fa fa-envelope-open me-2"></i>sinamfor@gmx.com</small>
             </div>
         </div>
@@ -25,12 +25,14 @@
 <!-- Navbar & Carousel Start -->
 <div class="container-fluid position-relative p-0">
     <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-        <a href="{% url 'home' %}" class="navbar-brand p-0">
-            <img class="w-50" src="{% static 'img/logo-1.png' %}" alt="Image">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="fa fa-bars"></span>
-        </button>
+        <div class="d-flex justify-content-between align-items-center w-100">
+            <a href="{% url 'home' %}" class="navbar-brand p-0">
+                <img class="w-50" src="{% static 'img/logo-1.png' %}" alt="Image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+        </div>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
                 <a href="{% url 'home' %}" class="nav-item nav-link {% if is_home_page %}active{% endif %}">Home</a>
